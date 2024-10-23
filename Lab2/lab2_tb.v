@@ -1,6 +1,4 @@
-`timescale 1ns / 1ps
-
-module Testbench;
+module lab2_tb;
 
     // Inputs to the ExecutionUnit
     reg [31:0] opA;
@@ -27,9 +25,6 @@ module Testbench;
         opB = 0;
         func = 0;
         auxFunc = 0;
-
-        // Wait for global reset
-        #100;
         
         // Test Case 1: Addition
         opA = 15;
@@ -105,4 +100,4 @@ module Testbench;
                  $time, opA, opB, func, auxFunc, out);
     end
 
-endmodule // Testbench
+endmodule 

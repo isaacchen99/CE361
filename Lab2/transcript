@@ -1,0 +1,58 @@
+# //  ModelSim SE-64 2020.1 Jan 28 2020 Linux 4.18.0-553.22.1.el8_10.x86_64
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do lab2_tb.do
+# -9
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 2020.1 Lib Mapping Utility 2020.01 Jan 28 2020
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 18:21:28 on Oct 23,2024
+# vlog -reportprogress 300 -work work lab2_tb.v 
+# -- Compiling module lab2_tb
+# 
+# Top level modules:
+# 	lab2_tb
+# End time: 18:21:28 on Oct 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.1 Compiler 2020.01 Jan 28 2020
+# Start time: 18:21:28 on Oct 23,2024
+# vlog -reportprogress 300 -work work icl5712_execute.v 
+# -- Compiling module ExecutionUnit
+# 
+# Top level modules:
+# 	ExecutionUnit
+# End time: 18:21:28 on Oct 23,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -classdebug -voptargs="+acc" "+notimingchecks" -L work work.lab2_tb -wlf lab2_tb.wlf 
+# Start time: 18:21:28 on Oct 23,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.lab2_tb(fast)
+# Loading work.ExecutionUnit(fast)
+# At time                    0, opA =         15, opB =         10, func = 000, auxFunc = 0000000, Result =         25
+# At time                   10, opA =         10, opB =         20, func = 000, auxFunc = 0100000, Result = 4294967286
+# At time                   20, opA =          4, opB =          5, func = 001, auxFunc = 0100000, Result =        128
+# At time                   30, opA = 4294967291, opB =          3, func = 010, auxFunc = 0100000, Result =          1
+# At time                   40, opA =          5, opB =          3, func = 011, auxFunc = 0100000, Result =          0
+# At time                   50, opA =          4, opB =          1, func = 100, auxFunc = 0100000, Result =          5
+# At time                   60, opA =          4, opB =          1, func = 101, auxFunc = 0000000, Result =          2
+# At time                   70, opA = 4294967288, opB =          1, func = 101, auxFunc = 0100000, Result = 2147483644
+# At time                   80, opA =          4, opB =          1, func = 110, auxFunc = 0100000, Result =          5
+# At time                   90, opA =          4, opB =          1, func = 111, auxFunc = 0100000, Result =          0
+# ** Note: $finish    : lab2_tb.v(94)
+#    Time: 100 ns  Iteration: 0  Instance: /lab2_tb
+# 1
+# Break in Module lab2_tb at lab2_tb.v line 94
+# End time: 18:23:04 on Oct 23,2024, Elapsed time: 0:01:36
+# Errors: 0, Warnings: 0
